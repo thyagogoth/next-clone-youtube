@@ -16,6 +16,15 @@
 	},
 	"plugins": ["react", "prettier"],
 	"rules": {
+		"react/prop-types": "off",
+		"react/jsx-props-no-spreading": [
+			"error",
+			{
+				"html": "ignore",
+				"custom": "ignore",
+				"exceptions": [""]
+			}
+		],
 		"prettier/prettier": "error",
 		// "jsx-quotes": ["error", "never"],
 		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
